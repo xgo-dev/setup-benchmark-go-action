@@ -35,6 +35,17 @@
     },
     {
       "kind": "branch",
+      "id": "6680fa6ed462335c",
+      "label": "Branch dastai/setup-benchmark-go-action:codex/direct-main-publish",
+      "path": "series/branch/6680fa6ed462335c/summary.json",
+      "configPath": "series/branch/6680fa6ed462335c/config.json",
+      "commitPath": "commits/05f17503644915787e5a94bf4c9932d039c10f82.json",
+      "sha": "05f17503644915787e5a94bf4c9932d039c10f82",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/05f17503644915787e5a94bf4c9932d039c10f82",
+      "updatedAt": "2026-08-18T05:04:53.692Z"
+    },
+    {
+      "kind": "branch",
       "id": "aab0bf4e2e150c9d",
       "label": "Branch dastai/setup-benchmark-go-action:codex/paired-same-runner-delta",
       "path": "series/branch/aab0bf4e2e150c9d/summary.json",
@@ -75,6 +86,17 @@
       "sha": "9c4de3cf7706dbf08274a9f2e72a60e67aed05f0",
       "sourceUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/commit/9c4de3cf7706dbf08274a9f2e72a60e67aed05f0",
       "updatedAt": "2026-08-10T21:57:14.344Z"
+    },
+    {
+      "kind": "pull",
+      "id": "6",
+      "label": "PR #6",
+      "path": "series/pull/6/summary.json",
+      "configPath": "series/pull/6/config.json",
+      "commitPath": "commits/05f17503644915787e5a94bf4c9932d039c10f82.json",
+      "sha": "05f17503644915787e5a94bf4c9932d039c10f82",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/05f17503644915787e5a94bf4c9932d039c10f82",
+      "updatedAt": "2026-08-18T05:04:53.686Z"
     },
     {
       "kind": "pull",
