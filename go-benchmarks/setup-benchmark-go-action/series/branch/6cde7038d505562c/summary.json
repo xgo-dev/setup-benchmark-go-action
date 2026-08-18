@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "suiteId": "setup-benchmark-go-action",
+  "kind": "branch",
+  "id": "6cde7038d505562c",
+  "label": "Branch dastai/setup-benchmark-go-action:codex/release-v1.0.5",
+  "entries": [
+    {
+      "source": {
+        "repository": "dastai/setup-benchmark-go-action",
+        "sha": "455431f331b8b3ec938c2541807f7b9a616332a7",
+        "ref": "codex/release-v1.0.5",
+        "url": "https://github.com/dastai/setup-benchmark-go-action/commit/455431f331b8b3ec938c2541807f7b9a616332a7",
+        "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32105164528",
+        "timestamp": "2026-08-18T06:01:15Z"
+      },
+      "platforms": {
+        "ubuntu-node24-amd64": {
+          "schemaVersion": 1,
+          "suiteId": "setup-benchmark-go-action",
+          "shardId": "merged",
+          "source": {
+            "repository": "dastai/setup-benchmark-go-action",
+            "sha": "455431f331b8b3ec938c2541807f7b9a616332a7",
+            "ref": "codex/release-v1.0.5",
+            "url": "https://github.com/dastai/setup-benchmark-go-action/commit/455431f331b8b3ec938c2541807f7b9a616332a7",
+            "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32105164528",
+            "timestamp": "2026-08-18T06:01:15Z"
+          },
+          "platform": {
+            "id": "ubuntu-node24-amd64",
+            "label": "Ubuntu / amd64 / Node 24",
+            "os": "linux",
+            "arch": "amd64"
+          },
+          "units": {
+            "ns/op": {
+              "better": "lower"
+            },
+            "binary-bytes": {
+              "better": "lower",
+              "assume": "exact"
+            }
+          },
+          "benchmarks": [
+            {
+              "name": "BenchmarkGroupRules100",
+              "package": "github.com/xgo-dev/setup-benchmark-go-action",
+              "group": "grouping",
+              "chart": "group:grouping",
+              "samples": [
+                {
+                  "iterations": 280,
+                  "measurements": {
+                    "ns/op": 226089.964
+                  }
+                },
+                {
+                  "iterations": 280,
+                  "measurements": {
+                    "ns/op": 260643.818
+                  }
+                },
+                {
+                  "iterations": 280,
+                  "measurements": {
+                    "ns/op": 223521.907
+                  }
+                },
+                {
+                  "iterations": 280,
+                  "measurements": {
+                    "ns/op": 221983.568
+                  }
+                },
+                {
+                  "iterations": 280,
+                  "measurements": {
+                    "ns/op": 219126.15
+                  }
+                }
+              ],
+              "measurements": {
+                "ns/op": 223521.907
+              }
+            },
+            {
+              "name": "BenchmarkParseGoOutput40",
+              "package": "github.com/xgo-dev/setup-benchmark-go-action",
+              "group": "parsing",
+              "chart": "group:parsing",
+              "samples": [
+                {
+                  "iterations": 314,
+                  "measurements": {
+                    "ns/op": 357825.535
+                  }
+                },
+                {
+                  "iterations": 314,
+                  "measurements": {
+                    "ns/op": 252339.551
+                  }
+                },
+                {
+                  "iterations": 314,
+                  "measurements": {
+                    "ns/op": 271256.522
+                  }
+                },
+                {
+                  "iterations": 314,
+                  "measurements": {
+                    "ns/op": 277914.131
+                  }
+                },
+                {
+                  "iterations": 314,
+                  "measurements": {
+                    "ns/op": 240207.987
+                  }
+                }
+              ],
+              "measurements": {
+                "ns/op": 271256.522
+              }
+            },
+            {
+              "name": "BenchmarkRecordBundle",
+              "package": "github.com/xgo-dev/setup-benchmark-go-action",
+              "group": "bundles",
+              "chart": "benchmark:github.com/xgo-dev/setup-benchmark-go-action::BenchmarkRecordBundle",
+              "samples": [
+                {
+                  "iterations": 1,
+                  "measurements": {
+                    "binary-bytes": 330118
+                  }
+                }
+              ],
+              "measurements": {
+                "binary-bytes": 330118
+              }
+            },
+            {
+              "name": "BenchmarkRenderBundle",
+              "package": "github.com/xgo-dev/setup-benchmark-go-action",
+              "group": "bundles",
+              "chart": "benchmark:github.com/xgo-dev/setup-benchmark-go-action::BenchmarkRenderBundle",
+              "samples": [
+                {
+                  "iterations": 1,
+                  "measurements": {
+                    "binary-bytes": 330661
+                  }
+                }
+              ],
+              "measurements": {
+                "binary-bytes": 330661
+              }
+            },
+            {
+              "name": "BenchmarkValidateArtifact40",
+              "package": "github.com/xgo-dev/setup-benchmark-go-action",
+              "group": "validation",
+              "chart": "group:validation",
+              "samples": [
+                {
+                  "iterations": 217,
+                  "measurements": {
+                    "ns/op": 332681.286
+                  }
+                },
+                {
+                  "iterations": 217,
+                  "measurements": {
+                    "ns/op": 301572.654
+                  }
+                },
+                {
+                  "iterations": 217,
+                  "measurements": {
+                    "ns/op": 292918.23
+                  }
+                },
+                {
+                  "iterations": 217,
+                  "measurements": {
+                    "ns/op": 272037.258
+                  }
+                },
+                {
+                  "iterations": 217,
+                  "measurements": {
+                    "ns/op": 269787.346
+                  }
+                }
+              ],
+              "measurements": {
+                "ns/op": 292918.23
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
