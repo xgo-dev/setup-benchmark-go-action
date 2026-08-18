@@ -8,11 +8,11 @@
     {
       "source": {
         "repository": "dastai/setup-benchmark-go-action",
-        "sha": "c047c6a3013fe1d812f53e22a810f629799e7d6c",
+        "sha": "8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
         "ref": "codex/paired-same-runner-delta",
-        "url": "https://github.com/dastai/setup-benchmark-go-action/commit/c047c6a3013fe1d812f53e22a810f629799e7d6c",
-        "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32094636780",
-        "timestamp": "2026-08-18T03:12:25Z"
+        "url": "https://github.com/dastai/setup-benchmark-go-action/commit/8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
+        "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32095018006",
+        "timestamp": "2026-08-18T03:18:50Z"
       },
       "platforms": {
         "ubuntu-node24-amd64": {
@@ -21,11 +21,11 @@
           "shardId": "merged",
           "source": {
             "repository": "dastai/setup-benchmark-go-action",
-            "sha": "c047c6a3013fe1d812f53e22a810f629799e7d6c",
+            "sha": "8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
             "ref": "codex/paired-same-runner-delta",
-            "url": "https://github.com/dastai/setup-benchmark-go-action/commit/c047c6a3013fe1d812f53e22a810f629799e7d6c",
-            "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32094636780",
-            "timestamp": "2026-08-18T03:12:25Z"
+            "url": "https://github.com/dastai/setup-benchmark-go-action/commit/8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
+            "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32095018006",
+            "timestamp": "2026-08-18T03:18:50Z"
           },
           "platform": {
             "id": "ubuntu-node24-amd64",
@@ -50,38 +50,38 @@
               "chart": "group:grouping",
               "samples": [
                 {
-                  "iterations": 254,
+                  "iterations": 609,
                   "measurements": {
-                    "ns/op": 260814.992
+                    "ns/op": 148480.834
                   }
                 },
                 {
-                  "iterations": 254,
+                  "iterations": 609,
                   "measurements": {
-                    "ns/op": 237629.902
+                    "ns/op": 151033.03
                   }
                 },
                 {
-                  "iterations": 254,
+                  "iterations": 609,
                   "measurements": {
-                    "ns/op": 236162.035
+                    "ns/op": 146664.754
                   }
                 },
                 {
-                  "iterations": 254,
+                  "iterations": 609,
                   "measurements": {
-                    "ns/op": 238012.827
+                    "ns/op": 149539.967
                   }
                 },
                 {
-                  "iterations": 254,
+                  "iterations": 609,
                   "measurements": {
-                    "ns/op": 233747.236
+                    "ns/op": 146516.713
                   }
                 }
               ],
               "measurements": {
-                "ns/op": 237629.902
+                "ns/op": 148480.834
               }
             },
             {
@@ -91,38 +91,38 @@
               "chart": "group:parsing",
               "samples": [
                 {
-                  "iterations": 263,
+                  "iterations": 415,
                   "measurements": {
-                    "ns/op": 351976.015
+                    "ns/op": 193029.369
                   }
                 },
                 {
-                  "iterations": 263,
+                  "iterations": 415,
                   "measurements": {
-                    "ns/op": 267089.608
+                    "ns/op": 191685.533
                   }
                 },
                 {
-                  "iterations": 263,
+                  "iterations": 415,
                   "measurements": {
-                    "ns/op": 261834.213
+                    "ns/op": 182503.771
                   }
                 },
                 {
-                  "iterations": 263,
+                  "iterations": 415,
                   "measurements": {
-                    "ns/op": 260319.433
+                    "ns/op": 170735.219
                   }
                 },
                 {
-                  "iterations": 263,
+                  "iterations": 415,
                   "measurements": {
-                    "ns/op": 268876.304
+                    "ns/op": 172743.294
                   }
                 }
               ],
               "measurements": {
-                "ns/op": 267089.608
+                "ns/op": 182503.771
               }
             },
             {
@@ -134,12 +134,12 @@
                 {
                   "iterations": 1,
                   "measurements": {
-                    "binary-bytes": 330108
+                    "binary-bytes": 330118
                   }
                 }
               ],
               "measurements": {
-                "binary-bytes": 330108
+                "binary-bytes": 330118
               }
             },
             {
@@ -151,12 +151,12 @@
                 {
                   "iterations": 1,
                   "measurements": {
-                    "binary-bytes": 330651
+                    "binary-bytes": 330661
                   }
                 }
               ],
               "measurements": {
-                "binary-bytes": 330651
+                "binary-bytes": 330661
               }
             },
             {
@@ -166,38 +166,38 @@
               "chart": "group:validation",
               "samples": [
                 {
-                  "iterations": 291,
+                  "iterations": 448,
                   "measurements": {
-                    "ns/op": 399967.863
+                    "ns/op": 212439.596
                   }
                 },
                 {
-                  "iterations": 291,
+                  "iterations": 448,
                   "measurements": {
-                    "ns/op": 306282.313
+                    "ns/op": 207660.071
                   }
                 },
                 {
-                  "iterations": 291,
+                  "iterations": 448,
                   "measurements": {
-                    "ns/op": 376727.863
+                    "ns/op": 198642.641
                   }
                 },
                 {
-                  "iterations": 291,
+                  "iterations": 448,
                   "measurements": {
-                    "ns/op": 297078.34
+                    "ns/op": 195786.266
                   }
                 },
                 {
-                  "iterations": 291,
+                  "iterations": 448,
                   "measurements": {
-                    "ns/op": 294371.684
+                    "ns/op": 198479.763
                   }
                 }
               ],
               "measurements": {
-                "ns/op": 306282.313
+                "ns/op": 198642.641
               }
             }
           ]

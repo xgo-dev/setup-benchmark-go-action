@@ -39,10 +39,10 @@
       "label": "Branch dastai/setup-benchmark-go-action:codex/paired-same-runner-delta",
       "path": "series/branch/aab0bf4e2e150c9d/summary.json",
       "configPath": "series/branch/aab0bf4e2e150c9d/config.json",
-      "commitPath": "commits/c047c6a3013fe1d812f53e22a810f629799e7d6c.json",
-      "sha": "c047c6a3013fe1d812f53e22a810f629799e7d6c",
-      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/c047c6a3013fe1d812f53e22a810f629799e7d6c",
-      "updatedAt": "2026-08-18T03:18:17.984Z"
+      "commitPath": "commits/8d26b1027220fec8d6bb9f9b90ed920daa60c03f.json",
+      "sha": "8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
+      "updatedAt": "2026-08-18T03:33:31.193Z"
     },
     {
       "kind": "branch",
@@ -82,10 +82,10 @@
       "label": "PR #7",
       "path": "series/pull/7/summary.json",
       "configPath": "series/pull/7/config.json",
-      "commitPath": "commits/c047c6a3013fe1d812f53e22a810f629799e7d6c.json",
-      "sha": "c047c6a3013fe1d812f53e22a810f629799e7d6c",
-      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/c047c6a3013fe1d812f53e22a810f629799e7d6c",
-      "updatedAt": "2026-08-18T03:18:17.973Z"
+      "commitPath": "commits/8d26b1027220fec8d6bb9f9b90ed920daa60c03f.json",
+      "sha": "8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/8d26b1027220fec8d6bb9f9b90ed920daa60c03f",
+      "updatedAt": "2026-08-18T03:33:31.187Z"
     }
   ]
 }
