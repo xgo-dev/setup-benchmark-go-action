@@ -57,6 +57,17 @@
     },
     {
       "kind": "branch",
+      "id": "4e2d3653df858597",
+      "label": "Branch dastai/setup-benchmark-go-action:codex/partial-platform-baseline-20260822",
+      "path": "series/branch/4e2d3653df858597/summary.json",
+      "configPath": "series/branch/4e2d3653df858597/config.json",
+      "commitPath": "commits/6d4d1e394e5b0116de360cabd70c747f6b5507fc.json",
+      "sha": "6d4d1e394e5b0116de360cabd70c747f6b5507fc",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/6d4d1e394e5b0116de360cabd70c747f6b5507fc",
+      "updatedAt": "2026-08-21T21:53:49.983Z"
+    },
+    {
+      "kind": "branch",
       "id": "6cde7038d505562c",
       "label": "Branch dastai/setup-benchmark-go-action:codex/release-v1.0.5",
       "path": "series/branch/6cde7038d505562c/summary.json",
@@ -130,6 +141,17 @@
       "sha": "455431f331b8b3ec938c2541807f7b9a616332a7",
       "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/455431f331b8b3ec938c2541807f7b9a616332a7",
       "updatedAt": "2026-08-18T06:02:11.481Z"
+    },
+    {
+      "kind": "pull",
+      "id": "9",
+      "label": "PR #9",
+      "path": "series/pull/9/summary.json",
+      "configPath": "series/pull/9/config.json",
+      "commitPath": "commits/6d4d1e394e5b0116de360cabd70c747f6b5507fc.json",
+      "sha": "6d4d1e394e5b0116de360cabd70c747f6b5507fc",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/6d4d1e394e5b0116de360cabd70c747f6b5507fc",
+      "updatedAt": "2026-08-21T21:53:49.977Z"
     }
   ]
 }
