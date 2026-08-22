@@ -308,12 +308,20 @@ function loadArtifacts(root) {
     `no result.json artifacts found under ${root}`,
   );
   const baselines = [];
+  const platformHasBaseline = new Map();
   const results = resultPaths.map((filename) => {
     const result = JSON.parse(fs.readFileSync(filename, "utf8"));
     try {
       validateResult(result, config);
       const baselinePath = path.join(path.dirname(filename), "baseline.json");
-      if (fs.existsSync(baselinePath)) {
+      const hasBaseline = fs.existsSync(baselinePath);
+      const previous = platformHasBaseline.get(result.platform.id);
+      assert(
+        previous === undefined || previous === hasBaseline,
+        `same-runner baseline must be present for every shard of platform ${JSON.stringify(result.platform.id)}`,
+      );
+      platformHasBaseline.set(result.platform.id, hasBaseline);
+      if (hasBaseline) {
         const baseline = validateResult(
           JSON.parse(fs.readFileSync(baselinePath, "utf8")),
           config,
@@ -334,10 +342,6 @@ function loadArtifacts(root) {
       throw new Error(`${filename}: ${error.message}`, { cause: error });
     }
   });
-  assert(
-    baselines.length === 0 || baselines.length === results.length,
-    "same-runner baseline must be present for every result artifact",
-  );
   return {
     config,
     results: mergeShards(results),

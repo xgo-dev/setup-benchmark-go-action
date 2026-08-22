@@ -277,6 +277,46 @@ test("marks values new when no main platform baseline exists", () => {
   assert.match(fs.readFileSync(comment, "utf8"), /\| new \|/u);
 });
 
+test("reports a platform without a paired baseline as new", () => {
+  const config = new Config({
+    id: "history",
+    groups: { core: "^Core" },
+  });
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "benchmark-partial-"));
+  const baseSHA = "3434343434343434343434343434343434343434";
+  const headSHA = "3535353535353535353535353535353535353535";
+  const linux = result(headSHA, 8);
+  const windows = result(headSHA, 12);
+  windows.platform = {
+    id: "windows-amd64",
+    label: "Windows / amd64",
+    os: "windows",
+    arch: "amd64",
+  };
+  const baseline = result(baseSHA, 10);
+  const comment = path.join(root, "comment.md");
+
+  writeReport(
+    comment,
+    "",
+    config,
+    {
+      source: linux.source,
+      platforms: { "linux-amd64": linux, "windows-amd64": windows },
+    },
+    {
+      source: baseline.source,
+      platforms: { "linux-amd64": baseline },
+    },
+    { sameRunner: true },
+  );
+
+  const body = fs.readFileSync(comment, "utf8");
+  assert.match(body, /### Linux \/ amd64[\s\S]*-20\.0% \(better\)/u);
+  assert.match(body, /### Windows \/ amd64[\s\S]*\| new \|/u);
+  assert.match(body, /Platforms without a paired baseline are marked `new`/u);
+});
+
 test("keeps valid history when grouping and chart configuration evolves", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "benchmark-config-"));
   const firstConfig = new Config({

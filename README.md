@@ -422,14 +422,16 @@ transition so workflow runs that started with an older action bundle can still
 publish without losing history.
 
 For a pull request, the publisher creates one bot comment and updates that same
-comment on later commits. When every platform artifact includes
-`baseline-benchmark-file`, each metric is compared with that paired baseline
-measured by the same runner job. The report links the baseline commit and labels
-the comparison `vs base`. Otherwise, each metric is compared with the newest
-matching platform in `main`. If neither baseline exists, including the first
-setup PR in a new project, the report succeeds and marks every metric as `new`.
-Each comparison displays both the signed difference in the metric's unit and
-the percentage change.
+comment on later commits. Within each platform, either every shard includes
+`baseline-benchmark-file` or none does. Platforms with a baseline compare each
+metric with that paired observation measured by the same runner job; the report
+links the baseline commit and labels the comparison `vs base`. A newly added
+platform may omit its baseline and is marked `new` without weakening pairing on
+the other platforms. When no platform has a paired baseline, each metric is
+compared with the newest matching platform in `main`. If neither baseline
+exists, including the first setup PR in a new project, the report succeeds and
+marks every metric as `new`. Each comparison displays both the signed difference
+in the metric's unit and the percentage change.
 
 If the two files contain deliberately index-paired repetitions, set
 `sample-pairing: index`. The report then uses the medians of pairwise signed

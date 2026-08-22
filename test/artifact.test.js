@@ -95,7 +95,7 @@ test("validates, writes, loads, and merges distinct shards", () => {
   );
 });
 
-test("requires a same-runner baseline for every artifact", () => {
+test("requires a same-runner baseline for every shard of a platform", () => {
   const config = new Config({ id: "artifact", groups: { core: "^Core" } });
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "benchmark-paired-"));
   writeArtifact(
@@ -111,7 +111,46 @@ test("requires a same-runner baseline for every artifact", () => {
   );
   assert.throws(
     () => loadArtifacts(root),
-    /baseline must be present for every result artifact/u,
+    /baseline must be present for every shard of platform "linux-amd64"/u,
+  );
+});
+
+test("allows a platform without a same-runner baseline", () => {
+  const config = new Config({ id: "artifact", groups: { core: "^Core" } });
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "benchmark-partial-"));
+  writeArtifact(
+    path.join(root, "linux"),
+    config,
+    result("linux", ["BenchmarkCoreLinux"]),
+    result("linux", ["BenchmarkCoreLinux"], {
+      source: {
+        ...result("linux", []).source,
+        sha: baselineSHA,
+        url: `https://github.com/owner/project/commit/${baselineSHA}`,
+      },
+    }),
+  );
+  writeArtifact(
+    path.join(root, "windows"),
+    config,
+    result("windows", ["BenchmarkCoreWindows"], {
+      platform: {
+        id: "windows-amd64",
+        label: "Windows / amd64",
+        os: "windows",
+        arch: "amd64",
+      },
+    }),
+  );
+
+  const loaded = loadArtifacts(root);
+  assert.deepEqual(
+    loaded.results.map((item) => item.platform.id),
+    ["linux-amd64", "windows-amd64"],
+  );
+  assert.deepEqual(
+    loaded.baselines.map((item) => item.platform.id),
+    ["linux-amd64"],
   );
 });
 
