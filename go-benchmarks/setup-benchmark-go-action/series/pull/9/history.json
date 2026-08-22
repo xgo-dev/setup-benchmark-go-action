@@ -8,11 +8,11 @@
     {
       "source": {
         "repository": "dastai/setup-benchmark-go-action",
-        "sha": "6d4d1e394e5b0116de360cabd70c747f6b5507fc",
+        "sha": "17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
         "ref": "codex/partial-platform-baseline-20260822",
-        "url": "https://github.com/dastai/setup-benchmark-go-action/commit/6d4d1e394e5b0116de360cabd70c747f6b5507fc",
-        "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32530549336",
-        "timestamp": "2026-08-21T21:53:09Z"
+        "url": "https://github.com/dastai/setup-benchmark-go-action/commit/17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
+        "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32570734556",
+        "timestamp": "2026-08-22T11:36:23Z"
       },
       "platforms": {
         "ubuntu-node24-amd64": {
@@ -21,11 +21,11 @@
           "shardId": "merged",
           "source": {
             "repository": "dastai/setup-benchmark-go-action",
-            "sha": "6d4d1e394e5b0116de360cabd70c747f6b5507fc",
+            "sha": "17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
             "ref": "codex/partial-platform-baseline-20260822",
-            "url": "https://github.com/dastai/setup-benchmark-go-action/commit/6d4d1e394e5b0116de360cabd70c747f6b5507fc",
-            "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32530549336",
-            "timestamp": "2026-08-21T21:53:09Z"
+            "url": "https://github.com/dastai/setup-benchmark-go-action/commit/17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
+            "runUrl": "https://github.com/xgo-dev/setup-benchmark-go-action/actions/runs/32570734556",
+            "timestamp": "2026-08-22T11:36:23Z"
           },
           "platform": {
             "id": "ubuntu-node24-amd64",
@@ -50,38 +50,38 @@
               "chart": "group:grouping",
               "samples": [
                 {
-                  "iterations": 570,
+                  "iterations": 272,
                   "measurements": {
-                    "ns/op": 160426.746
+                    "ns/op": 239015.254
                   }
                 },
                 {
-                  "iterations": 570,
+                  "iterations": 272,
                   "measurements": {
-                    "ns/op": 158618.44
+                    "ns/op": 231719.574
                   }
                 },
                 {
-                  "iterations": 570,
+                  "iterations": 272,
                   "measurements": {
-                    "ns/op": 160629
+                    "ns/op": 230652.577
                   }
                 },
                 {
-                  "iterations": 570,
+                  "iterations": 272,
                   "measurements": {
-                    "ns/op": 159172.953
+                    "ns/op": 333843.088
                   }
                 },
                 {
-                  "iterations": 570,
+                  "iterations": 272,
                   "measurements": {
-                    "ns/op": 161525.502
+                    "ns/op": 370960.901
                   }
                 }
               ],
               "measurements": {
-                "ns/op": 160426.746
+                "ns/op": 239015.254
               }
             },
             {
@@ -91,38 +91,38 @@
               "chart": "group:parsing",
               "samples": [
                 {
-                  "iterations": 313,
+                  "iterations": 268,
                   "measurements": {
-                    "ns/op": 231312.601
+                    "ns/op": 470389.642
                   }
                 },
                 {
-                  "iterations": 313,
+                  "iterations": 268,
                   "measurements": {
-                    "ns/op": 195814.776
+                    "ns/op": 301198.086
                   }
                 },
                 {
-                  "iterations": 313,
+                  "iterations": 268,
                   "measurements": {
-                    "ns/op": 191970.78
+                    "ns/op": 262024.996
                   }
                 },
                 {
-                  "iterations": 313,
+                  "iterations": 268,
                   "measurements": {
-                    "ns/op": 199940.466
+                    "ns/op": 255465.858
                   }
                 },
                 {
-                  "iterations": 313,
+                  "iterations": 268,
                   "measurements": {
-                    "ns/op": 187018.032
+                    "ns/op": 276684.97
                   }
                 }
               ],
               "measurements": {
-                "ns/op": 195814.776
+                "ns/op": 276684.97
               }
             },
             {
@@ -166,38 +166,38 @@
               "chart": "group:validation",
               "samples": [
                 {
-                  "iterations": 439,
+                  "iterations": 282,
                   "measurements": {
-                    "ns/op": 218575.927
+                    "ns/op": 320363.188
                   }
                 },
                 {
-                  "iterations": 439,
+                  "iterations": 282,
                   "measurements": {
-                    "ns/op": 215434.428
+                    "ns/op": 307202.043
                   }
                 },
                 {
-                  "iterations": 439,
+                  "iterations": 282,
                   "measurements": {
-                    "ns/op": 204868.749
+                    "ns/op": 294127.55
                   }
                 },
                 {
-                  "iterations": 439,
+                  "iterations": 282,
                   "measurements": {
-                    "ns/op": 207071.205
+                    "ns/op": 293407.504
                   }
                 },
                 {
-                  "iterations": 439,
+                  "iterations": 282,
                   "measurements": {
-                    "ns/op": 205188.763
+                    "ns/op": 291405.727
                   }
                 }
               ],
               "measurements": {
-                "ns/op": 207071.205
+                "ns/op": 294127.55
               }
             }
           ]

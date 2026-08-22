@@ -61,10 +61,10 @@
       "label": "Branch dastai/setup-benchmark-go-action:codex/partial-platform-baseline-20260822",
       "path": "series/branch/4e2d3653df858597/summary.json",
       "configPath": "series/branch/4e2d3653df858597/config.json",
-      "commitPath": "commits/6d4d1e394e5b0116de360cabd70c747f6b5507fc.json",
-      "sha": "6d4d1e394e5b0116de360cabd70c747f6b5507fc",
-      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/6d4d1e394e5b0116de360cabd70c747f6b5507fc",
-      "updatedAt": "2026-08-21T21:53:49.983Z"
+      "commitPath": "commits/17b4bf3a74ce668a9bc2c60abbb39d6571b1610c.json",
+      "sha": "17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
+      "updatedAt": "2026-08-22T11:36:52.597Z"
     },
     {
       "kind": "branch",
@@ -148,10 +148,10 @@
       "label": "PR #9",
       "path": "series/pull/9/summary.json",
       "configPath": "series/pull/9/config.json",
-      "commitPath": "commits/6d4d1e394e5b0116de360cabd70c747f6b5507fc.json",
-      "sha": "6d4d1e394e5b0116de360cabd70c747f6b5507fc",
-      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/6d4d1e394e5b0116de360cabd70c747f6b5507fc",
-      "updatedAt": "2026-08-21T21:53:49.977Z"
+      "commitPath": "commits/17b4bf3a74ce668a9bc2c60abbb39d6571b1610c.json",
+      "sha": "17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
+      "sourceUrl": "https://github.com/dastai/setup-benchmark-go-action/commit/17b4bf3a74ce668a9bc2c60abbb39d6571b1610c",
+      "updatedAt": "2026-08-22T11:36:52.586Z"
     }
   ]
 }
